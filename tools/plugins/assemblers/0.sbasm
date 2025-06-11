@@ -1,0 +1,11 @@
+def info():
+    _info = {
+        "name": "SBProjects sbasm3 Assembler Plugin", 
+        "desc": "This plugin provides support for the sbasm assembler",
+        "author": "Andrew Shapton",
+        "copyright": "2025",
+        "version": "1.0.0"}
+    return _info
+
+def normaliseSymbolFile(symbol_file):
+    return True

@@ -1,0 +1,14 @@
+ADDAI           .EQ     $0000C189   RefCount=  1, Mem=Code, Source=main.asm 
+BADRED          .EQ     $00000018   RefCount=  1, Mem=Code, Source=main.asm 
+DISAFX          .EQ     $00000250   RefCount=  1, Mem=Code, Source=main.asm 
+ENABFX          .EQ     $00000265   RefCount=  1, Mem=Code, Source=main.asm 
+FXPIA           .EQ     $0000F040   RefCount=  7, Mem=Code, Source=main.asm 
+GETKEY          .EQ     $0000C2C4   RefCount=  0, Mem=Code, Source=main.asm 
+I               .EQ     $00000026   RefCount=  2, Mem=Code, Source=main.asm 
+INIZFX          .EQ     $00000256   RefCount=  1, Mem=Code, Source=main.asm 
+KEYINP          .EQ     $0000C297   RefCount=  2, Mem=Code, Source=main.asm 
+PAINZ           .EQ     $0000C287   RefCount=  1, Mem=Code, Source=main.asm 
+TABLE           .EQ     $00000230   RefCount=  1, Mem=Code, Source=main.asm 
+TESTFX          .EQ     $00000200   RefCount=  1, Mem=Code, Source=main.asm 
+WAIT1           .EQ     $00000207   RefCount=  1, Mem=Code, Source=main.asm 
+WAIT2           .EQ     $00000223   RefCount=  1, Mem=Code, Source=main.asm 

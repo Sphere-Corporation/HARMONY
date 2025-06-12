@@ -9,6 +9,6 @@ INIZFX          .EQ     $00000256   RefCount=  1, Mem=Code, Source=main.asm
 KEYINP          .EQ     $0000C297   RefCount=  2, Mem=Code, Source=main.asm 
 PAINZ           .EQ     $0000C287   RefCount=  1, Mem=Code, Source=main.asm 
 TABLE           .EQ     $00000230   RefCount=  1, Mem=Code, Source=main.asm 
-TESTFX          .EQ     $00000200   RefCount=  1, Mem=Code, Source=main.asm 
-WAIT1           .EQ     $00000207   RefCount=  1, Mem=Code, Source=main.asm 
-WAIT2           .EQ     $00000223   RefCount=  1, Mem=Code, Source=main.asm 
+TESTFX          .EQ     $00000203   RefCount=  1, Mem=Code, Source=main.asm 
+WAIT1           .EQ     $0000020A   RefCount=  1, Mem=Code, Source=main.asm 
+WAIT2           .EQ     $00000226   RefCount=  1, Mem=Code, Source=main.asm 

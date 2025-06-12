@@ -22,7 +22,7 @@
 ;
 ;               TITLE   76477 SOUND FX GEN DRIVERS
 ;       *
-FXPIA   .EQU     $F040         ; Address of PIA for KBD/2       ORIGINAL : $8020
+FXPIA   .EQU     $F040         ; Address of PIA for KBD/2  ?    ORIGINAL : $8020
 GETKEY  .EQU     $C2C4         ;                                ORIGINAL : $C2C4
 KEYINP  .EQU     $C297         ;                                ORIGINAL : $C297
 BADRED  .EQU     $0018         ;                                ORIGINAL : $0018
@@ -33,7 +33,7 @@ I       .EQU     $26           ; 16 BIT POINTER
 
 
 ;       SPHERE-1 SPECIFIC
-;        LDS     #$1FF          ; STACK BELOW PROGRAM
+        LDS     #$1FF          ; STACK BELOW PROGRAM
                                ; MUST BE FIRST LINE OF CODE
 
 TESTFX  BSR     INIZFX
@@ -57,7 +57,7 @@ WAIT2   JSR     KEYINP         ; WAIT FOR KEY RELEASE
         BRA     TESTFX         ; AGAIN...        
 
 ;       *
-        .NO $0230              ; LOOK-UP TABLE
+;       ORG $0230              ; LOOK-UP TABLE - REMOVED FOR SPHERE-1
 ;       * LOOK-UP TABLE:  DATA FOR PATCH & FREQ (16 X 2): 
 ;       *                 ***  KEY  ***  CONTINUOUS ENABLE:-
 TABLE   .DA     $00FF          ; 0   VCO,  1kHz 
@@ -77,12 +77,12 @@ TABLE   .DA     $00FF          ; 0   VCO,  1kHz
         .DA     $780D          ; C   NOISE & VCO (1KHZ)
         .DA     $1C70          ; D   FM,  SLF AUDIO-1, VCO 9KHZ
         .DA     $D987          ; E   AM,  SLF AUDIO-2, VCO 50HZ
-        .DA     $DF20          ; F   EVERYTHIN! (well, almost)
+        .DA     $DF20          ; F   EVERYTHING! (well, almost)
 
 
 ;       * LOW-LEVEL DRIVER SUBROUTINES.
 
-        .NO $0250              
+;       ORG $0250              ; REMOVED FOR SPHERE-1
 
 ;       * DISABLE SOUND EFFECTS GENERATOR.
 DISAFX  LDAB    #$3C
